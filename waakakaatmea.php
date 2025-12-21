@@ -69,13 +69,7 @@
      // exit();
  }
 
-if (!isset($wp_did_header)) {
+define( 'WP_USE_THEMES', true );
 
-    $wp_did_header = true;
-
-    require_once __DIR__ . '/wp-load.php';
-
-    wp();
-
-    require_once ABSPATH . WPINC . '/template-loader.php';
-}
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';
